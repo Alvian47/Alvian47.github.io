@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelayanan</title>
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        background-color: rgb(255, 255, 0);
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: rgb(0, 0, 0);
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container-pelayanan {
+        background-color: rgb(255, 255, 0);
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .video {
+        width: 40%;
+        display: inline-block;
+        position: relative;
+      }
+
+      video {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .video-text {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .text-background {
+        background-color: white;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .Galeri h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+      }
+
+      .slides {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 90px;
+      }
+
+      .slides .slide {
+        display: none;
+      }
+
+      .slides .slide img {
+        height: 100%;
+        width: 100%;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      .slides .navigation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .slides .navigation .prev,
+      .slides .navigation .next {
+        cursor: pointer;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        background: rgba(0, 0, 0, 0.2);
+        user-select: none;
+        transition: 0.6s ease;
+      }
+
+      .slides .navigation .prev:hover,
+      .slides .navigation .next:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+
+      .Sign {
+        position: relative;
+        text-align: center;
+        margin-top: 90px;
+      }
+
+      .Sign img {
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: rgba(4, 4, 255, 0.925);
+        padding: 10px;
+        color: white;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .overlay h2,
+      .overlay h4 {
+        margin: 0;
+        text-align: left;
+        margin-left: 50px;
+      }
+
+      .img-logo {
+        position: absolute;
+        bottom: 150px;
+        right: 250px;
+      }
+
+      .img-logo img {
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .container-pelayanan {
+          flex-direction: column;
+        }
+
+        .video {
+          width: 100%;
+          max-width: none;
+        }
+
+        .slides {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .slides .navigation .prev,
+        .slides .navigation .next {
+          font-size: 18px;
+          padding: 13px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .Galeri h2,
+        .video-text,
+        .img-logo img {
+          font-size: 16px;
+        }
+
+        .img-logo img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .slides .navigation .prev,
+        .slides .navigation .next,
+        .img-logo img {
+          font-size: 12px;
+          padding: 7px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-landing navbar-dark sticky-top p-3"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand fw-bold">BERGERAG</a>
+        <!-- <a href="#" class="navbar-brand fw-bold">BERGERAG <span class="fw-normal d-none d-sm-block" style="display: block;">BASIC LEARNING GESTURE LANGUAGE</span></a> -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-light fw-bold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="pelayanan.html" class="nav-link text-light">Pelayanan</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-light">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="daftar-wa.html" class="nav-link text-light">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <h1>Pelayanan</h1>
+    </div>
+    <div class="container-pelayanan">
+      <div class="video">
+        <!-- Video 1 di sisi kiri -->
+        <video controls>
+          <source src="video/sample.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-text">
+          <div class="text-background">Uji Coba Vidio Bisindo</div>
+        </div>
+      </div>
+      <div class="video">
+        <!-- Video 2 di sisi kanan -->
+        <video controls>
+          <source src="video/sample.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-text">
+          <div class="text-background">Kelas BISINDO</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slides">
+      <div class="Galeri">
+        <h2>Galeri</h2>
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" />
+      </div>
+      <div class="navigation">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="Sign">
+      <img src="img/sign.jpg" alt="" />
+      <div class="overlay">
+        <h2>Sign Language Program</h2>
+        <h4>Kelas Reguler</h4>
+      </div>
+      <div class="img-logo">
+        <img src="img/logo.jpg" alt="" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    >
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

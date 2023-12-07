@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #3FC1C9;
+}
+.navbar-nav {
+    margin-right: 10px; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; 
+}
+
+
+.title-landing {
+    background: rgb(0, 68, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 68, 255, 1) 0%,
+        rgba(76, 171, 233, 1) 40%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
+
+.navbar-landing {
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 40%,
+        rgb(0, 0, 0) 100%
+    ); */
+}
+
+.container-about {
+    display: flex;
+    padding: 20px;
+}
+
+.left-side {
+    margin-left: 10px;
+    flex: 1;
+    padding: 20px 20px 20px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+.logo {
+    max-width: 100%;
+    height: 420px;
+}
+.kota {
+    font-style: italic;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+    .container-about {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+        align-items: center; /* Menengahkan elemen di dalam container */
+    }
+
+    .left-side {
+        padding: 20px; /* Mengurangi padding untuk tampilan lebih kecil */
+        text-align: left; /* Menengahkan teks */
+        order: 1; /* Mengatur urutan judul */
+    }
+
+    .title {
+        order: 2; /* Mengubah urutan judul */
+    }
+
+    .kota{
+        display: none;
+    }
+
+    .logo {
+        order: 1; /* Mengatur urutan logo */
+        margin-top: 20px; /* Memberikan jarak di atas elemen ini */
+    }
+
+    .description {
+        padding-top: 20px;
+        order: 3; /* Mengatur urutan deskripsi */
+    }
+
+    .logo {
+        height: auto; /* Mengubah tinggi agar gambar proporsional */
+        max-width: 100%; /* Mengisi lebar */
+    }
+}
+
