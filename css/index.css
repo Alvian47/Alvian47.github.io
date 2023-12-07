@@ -55,7 +55,7 @@ iframe{width: 100%;}
   transform: scaleX(-1);
 }
 .title-landing {
-  height: 100vh;
+  /* height: 100vh; */
   background: #3FC1C9;
   /* background: linear-gradient(90deg, rgb(135, 36, 36) 0%, rgb(0, 0, 0) 40%, rgb(105, 72, 72) 100%);} */
 }
