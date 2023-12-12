@@ -1,11 +1,13 @@
-iframe{width: 100%;}
+iframe {
+  width: 100%;
+}
 
 .text-color {
   color: #eabf9f;
 }
 
 .navbar {
-  background-color: #3FC1C9;
+  background-color: #3fc1c9;
 }
 
 .navbar-nav {
@@ -15,31 +17,45 @@ iframe{width: 100%;}
 .navbar-nav .nav-item {
   margin-right: 50px;
 }
+.container-img {
+  display: flex;
+
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 75%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
 
 .button-yellow {
   margin-top: 80px;
   font-weight: bold;
   color: white;
-  background-color: #364F6B;
+  background-color: #364f6b;
 }
 
 .button-yellow:hover {
-  color: #364F6B;
+  color: #364f6b;
   background-color: #80e4e9;
-  border: 2px #364F6B solid;
+  border: 2px #364f6b solid;
 }
 
 .button-blue {
-  background-color: #364F6B;
+  background-color: #364f6b;
   font-weight: bold;
   color: white;
   border: 2px white solid;
 }
 
 .button-blue:hover {
-  color: #364F6B;
+  color: #364f6b;
   background-color: white;
-  border: 2px #364F6B solid;
+  border: 2px #364f6b solid;
 }
 
 .background-testimoni {
@@ -50,24 +66,24 @@ iframe{width: 100%;}
   margin: 0 auto;
 }
 
-.sunna_landing{
+.sunna_landing {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 .title-landing {
-  /* height: 100vh; */
-  background: #3FC1C9;
+  height: 90vh;
+  background: #3fc1c9;
   /* background: linear-gradient(90deg, rgb(135, 36, 36) 0%, rgb(0, 0, 0) 40%, rgb(105, 72, 72) 100%);} */
 }
-.landing-text-color{
-  color: #364F6B;
+.landing-text-color {
+  color: #364f6b;
 }
-.text-testi{
-    color: #364F6B; 
+.text-testi {
+  color: #364f6b;
 }
-.footer-color{
-    background-color: #3FC1C9;
-    color: white;
+.footer-color {
+  background-color: #3fc1c9;
+  color: white;
 }
 
 .navbar-landing {
@@ -80,14 +96,14 @@ iframe{width: 100%;}
   );
 }
 
-.pelayanan-landing{
-  background-color: #3FC1C9;
+.pelayanan-landing {
+  background-color: #3fc1c9;
 }
 
-.button-pelayanan{
+.button-pelayanan {
   background-color: #fff;
   font-weight: bold;
-  color: #364F6B;
+  color: #364f6b;
   border: 2px white solid;
 }
 
@@ -162,6 +178,10 @@ iframe{width: 100%;}
 #notif-license {
   display: none;
   position: fixed;
+}
+
+.card{
+  background-color:#3fc1c9 ;
 }
 
 .bar {
@@ -274,45 +294,45 @@ form.whatsapp-form {
 
 /* Media query */
 @media only screen and (max-width: 768px) {
-  .button-yellow{
+  .button-yellow {
     margin: 0px;
-    padding: .3rem .9rem .4rem !important;
+    padding: 0.3rem 0.9rem 0.4rem !important;
   }
 
-  .button-blue{
+  .button-blue {
     margin: 0px;
-    padding: .3rem .9rem .4rem !important;
+    padding: 0.3rem 0.9rem 0.4rem !important;
   }
 
-  .small-text-button{
+  .small-text-button {
     font-size: 13px;
   }
 
-  .text-testi{
+  .text-testi {
     text-align: center;
   }
 
-  .chevron-left{
+  .chevron-left {
     margin: 0 !important;
     font-size: 2rem;
   }
-  .chevron-right{
+  .chevron-right {
     font-size: 2rem;
   }
-  .chevron-container{
+  .chevron-container {
     text-align: center !important;
   }
 
-  .text-card-testimoni{
+  .text-card-testimoni {
     font-size: 12px;
   }
 
-  #foot{
+  #foot {
     margin-top: 1.4rem;
   }
 
-  .button-pelayanan{
+  .button-pelayanan {
     margin: 0px;
-    padding: .3rem .9rem .4rem !important;
+    padding: 0.3rem 0.9rem 0.4rem !important;
   }
 }
