@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+iframe {
+    width: 100%;
+}
+
+.btn-translate {
+    font-weight: bold;
+    color: white;
+    background-color: #364f6b;
+}
+
+.btn-translate:hover {
+    color: #364f6b;
+    background-color: #80e4e9;
+}
+
+.container-img {
+    display: flex;
+}
+
+.image {
+    height: 90%;
+}
+
+.text-color {
+    color: #eabf9f;
+}
+
+.navbar {
+    background-color: #3fc1c9;
+}
+
+.navbar-nav {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px;
+}
+
+/* Default Whatsapp Form CSS by www.idblanter.com */
+form.whatsapp-form {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 0.5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.whatsapp-form a.send_form {
+    color: #fff;
+    background: #21a51f;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+#text-info span {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0;
+    border-radius: 0.5rem;
+}
+
+#text-info span.yes {
+    background: #c6ffc5;
+    color: #0ea904;
+}
+
+#text-info span.no {
+    background: #ffc5c5;
+    color: #ce0404;
+}
+
+/* slider */
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 20em;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 2em;
+    border-bottom: .7em solid #364f6b;
+    border-top: .7em solid #364f6b;
+    border-right: .3em solid #364f6b;
+    border-left: .3em solid #364f6b;
+    /* box-shadow: 0 0 1em rgba(0, 0, 0, .2); */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 0.5em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-input-group {
+        width: 100% !important;
+    }
+
+}
