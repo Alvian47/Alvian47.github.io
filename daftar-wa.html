@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>balasan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>balasan</title>
 
-    <link rel="icon" type="image/x-icon" href="/img/sun.ico">
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/x-icon" href="/img/sun.ico">
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
 
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <style>
-      .container-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+  <style>
+    .container-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body>
-<!-- HEADER -->
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-landing navbar-dark sticky-top p-3">
+  <!-- HEADER -->
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-landing navbar-dark sticky-top p-3">
 
     <div class="container">
       <a href="index.html" class="navbar-brand fw-bold">BALASAN</a>
@@ -41,96 +43,106 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link text-light">Home</a>
-        </li>
-        <li class="nav-item">
+            <a href="index.html" class="nav-link text-light">Beranda</a>
+          </li>
+          <li class="nav-item">
             <a href="./about.html" class="nav-link text-light">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a href="daftar-wa.html" class="nav-link text-light fw-bold">Pendaftaran</a>
-        </li>
-        <li class="nav-item">
-            <a href="translate.html" class="nav-link text-light">Penerjemah</a>
-        </li>
+          </li>
         </ul>
       </div>
 
     </div>
-</nav>
-<!--/ HEADER -->
-<div class="container px-4 px-lg-5" style="margin-top: 80px;">
+  </nav>
+  <!--/ HEADER -->
+  <div class="container px-4 px-lg-5" style="margin-top: 80px;">
     <!-- Heading Row-->
 
     <div class="container pt-3 pb-5 px-4 px-lg-5" style="margin-top: 70px;">
-        <h2 class="text-center" style="color: #364f6b;">PENDAFTARAN</h2>
-        <br>
-        <div class="container-form">
-          <form class="whatsapp-form" style="width: 70%;">
-            <div class="datainput">
-            <input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
+      <h2 class="text-center" style="color: #364f6b;">PENDAFTARAN</h2>
+      <br>
+      <div class="container-form">
+        <form class="whatsapp-form" style="width: 70%;">
+          <div class="datainput">
+            <input class="validate" id="wa_name" name="name" required="" type="text" value='' />
             <span class="highlight"></span><span class="bar"></span>
             <label>Nama</label>
-            </div>
-            <div class="datainput">
-              <select id="wa_select">
+          </div>
+          <div class="datainput">
+            <select id="wa_select">
               <option hidden='hidden' selected='selected' value='default'>Pilih Jadwal Kelas</option>
-              <option value="1" >LEVEL 1 - SELASA : 17.00 - 18.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Rp 150.000,00</option>
-              <option value="2">LEVEL 1 - RABU : 18.30 - 19.30 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Rp 150.000,00</option>
-              <option value="3">LEVEL 1 - KAMIS : 18.30 - 19.30 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;   Rp 150.000,00</option>
-              <option value="4">LEVEL 1 - JUMAT : 17.00 - 18.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp;   Rp 150.000,00</option>
-              <option value="5">LEVEL 2 - SELASA : 18.30 - 20.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;  Rp 200.000,00</option>
-              <option value="6">LEVEL 2 - KAMIS : 18.30 - 20.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   Rp 200.000,00</option>
-              </select>
-              </div>
-            <div class="datainput">
-            <input class="validate" id="wa_number" name="count" required="" type="number" value=''/>
+              <option value="1">LEVEL 1 - SELASA : 17.00 - 18.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Rp
+                150.000,00</option>
+              <option value="2">LEVEL 1 - RABU : 18.30 - 19.30 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Rp
+                150.000,00</option>
+              <option value="3">LEVEL 1 - KAMIS : 18.30 - 19.30 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+                Rp 150.000,00</option>
+              <option value="4">LEVEL 1 - JUMAT : 17.00 - 18.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp;
+                Rp 150.000,00</option>
+              <option value="5">LEVEL 2 - SELASA : 18.30 - 20.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Rp
+                200.000,00</option>
+              <option value="6">LEVEL 2 - KAMIS : 18.30 - 20.00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Rp
+                200.000,00</option>
+            </select>
+          </div>
+          <div class="datainput">
+            <input class="validate" id="wa_number" name="count" required="" type="number" value='' />
             <span class="highlight"></span><span class="bar"></span>
             <label>Jumlah Orang</label>
-            </div>
-            <div class="datainput">
-            <input class="validate" id="wa_address" name="address" required="" type="address" value=''/>
+          </div>
+          <div class="datainput">
+            <input class="validate" id="wa_address" name="address" required="" type="address" value='' />
             <span class="highlight"></span><span class="bar"></span>
             <label>Alamat</label>
             <p>Pastikan alamat dengan benar !</p>
-            </div>
-            <div class="datainput">
+          </div>
+          <div class="datainput">
             <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
             <span class="highlight"></span><span class="bar"></span>
             <label>Catatan</label>
-            </div>
-            <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">
-                <img src="img/wa.png" width="30">&ensp;Pesan via Whatsapp
-            </a>
-            <div id="text-info"></div>
+          </div>
+          <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">
+            <img src="img/wa.png" width="30">&ensp;Pesan via Whatsapp
+          </a>
+          <div id="text-info"></div>
         </form>
-        </div>
-        
       </div>
-        <script type="text/javascript" src="js/daftar-wa.js"></script>
+
     </div>
-     <!-- FOOTER -->
-     <footer class="footer-color ">
-      <div class="container pb-0" id="section5">
-        <div class="row">
-          <div class="col ">
+    <script type="text/javascript" src="js/daftar-wa.js"></script>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer-color ">
+    <div class="container pb-0" id="section5">
+      <div class="row">
+        <div class="col ">
           <div class="container mt-3 ">
             <ul class="list-unstyled d-flex justify-content-center align-items-center">
-              <li class="list-inline-item "><a href="http://"><box-icon type='logo' name='instagram-alt'></box-icon></a></li>
-              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='facebook'></box-icon></a></li>
-              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='youtube'></box-icon></a></li>
-              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='twitter'></box-icon></a></li>
+              <li class="list-inline-item "><a href="http://"><box-icon type='logo' name='instagram-alt'></box-icon></a>
+              </li>
+              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='facebook'></box-icon></a>
+              </li>
+              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='youtube'></box-icon></a>
+              </li>
+              <li class="list-inline-item ps-2"><a href="http://"><box-icon type='logo' name='twitter'></box-icon></a>
+              </li>
             </ul>
           </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="text-center pb-3">Copyright &copy; balasan 2023</div>
         </div>
       </div>
-    </footer>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <div class="row">
+        <div class="text-center pb-3">Copyright &copy; balasan 2023</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

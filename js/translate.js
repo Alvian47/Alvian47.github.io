@@ -9,7 +9,7 @@ function showPicture() {
 
     slider.innerHTML = ""
 
-    let card = `<div class="card swiper-slide">
+    let card = `<div class="card-translate swiper-slide">
                 <div class="container">
                     <img src="/img/hand/pic.png" class="w-100 image">
                 </div>

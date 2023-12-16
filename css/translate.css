@@ -97,7 +97,7 @@ form.whatsapp-form {
     align-items: center;
 }
 
-.card {
+.card-translate {
     width: 20em;
     height: 50%;
     background-color: #fff;
@@ -114,15 +114,7 @@ form.whatsapp-form {
     margin: 0 0.5em;
 }
 
-/* footer */
-.footer-color {
-    background-color: #3fc1c9;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+
 
 @media only screen and (max-width: 768px) {
     .container-input-group {
